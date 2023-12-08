@@ -3,6 +3,9 @@ name = "advent23"
 version = "0.1.0"
 edition = "2021"
 
+[profile.release]
+debug = 1
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
@@ -18,3 +21,5 @@ regex = "1.7.0"
 colored = "2.0.0"
 indicatif = { version = "0.17.2", features = ["rayon"] }
 itertools = "0.10.5"
+lazy_static = { version = "1.4.0", features = [] }
+chrono = "0.4.31"
